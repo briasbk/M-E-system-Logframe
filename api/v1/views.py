@@ -1,7 +1,22 @@
 from rest_framework import viewsets
-from .serializers import ProjectSerializer
+from rest_framework.permissions import IsAuthenticated
+from .serializers import ProjectSerializer, HouseholdSerializer
 from projects.models import Project
+from household.models import Household
 
+# Project ViewSet
 class ProjectViewSet(viewsets.ModelViewSet):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
+
+# Household ViewSet
+class HouseholdViewSet(viewsets.ModelViewSet):
+    queryset = Household.objects.all()
+    serializer_class = HouseholdSerializer
+    permission_classes = [IsAuthenticated]  # Ensure the user is authenticated
+
+    def get_queryset(self):
+        user = self.request.user
+        if user.organization:
+            return Household.objects.filter(organization=user.organization)
+        return Household.objects.all()
