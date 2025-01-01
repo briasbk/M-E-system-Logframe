@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'users',
     'reports',
     'activity',
-    'rest_framework'
+    'rest_framework',
+    'household'
 ]
 
 MIDDLEWARE = [
