@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-@*6&-@j)aoi9av12klhl#na3g46_7x17%8*mq*02g4g!$02j0w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['http://localhost:3000/']
 
 
 # Application definition
@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'reports',
     'activity',
     'rest_framework',
-    'household'
+    'household',
+    # 'rest_framework_simplejwt'
 ]
 
 MIDDLEWARE = [
@@ -87,7 +88,16 @@ DATABASES = {
     }
 }
 
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': [
+#         'rest_framework_simplejwt.authentication.JWTAuthentication',
+#     ],
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.IsAuthenticated',
+#     ],
+# }
 
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'http://localhost:3000/']
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
