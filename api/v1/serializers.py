@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from projects.models import Project
 from household.models import Household, HouseholdMember
+from activity.models import Activity
 
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
@@ -19,3 +20,9 @@ class HouseholdSerializer(serializers.ModelSerializer):
     class Meta:
         model = Household
         fields = '__all__'
+
+class ActivitySerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = Activity
+        fields= '__all__'
