@@ -25,6 +25,6 @@ class Assumption(models.Model):
     description = models.TextField()
 
     def __str__(self):
-        return f"Assumption for Activity: {self.activity.id}"
+        return f"Assumption for Activity: {self.activity.id}, {self.activity.description}"
     
 
