@@ -32,7 +32,7 @@ Welcome to the Open-Source Monitoring and Evaluation (M&E) System! This project 
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/briasbk/M-E-system-Logframe.git
-   cd opensource-me-system
+   cd M-E-system-Logframe
    ```
 
 2. **Create a Virtual Environment**:
@@ -85,7 +85,7 @@ We welcome contributions from the community! Here's how you can get involved:
 ## Roadmap
 
 - [x] Initial setup and backend structure.
-- [ ] Implement user authentication and role management.
+- [x] Implement user authentication and role management.
 - [ ] Develop project and activity tracking modules.
 - [ ] Create a frontend interface using React.
 - [ ] Add advanced reporting and analytics features.
