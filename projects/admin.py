@@ -8,10 +8,10 @@ class GoalInline(admin.TabularInline):
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'organization', 'start_date', 'end_date', 'created_at', 'updated_at')
-    list_filter = ('organization', 'start_date', 'end_date')
+    list_display = ('id', 'name', 'organization', 'created_at', 'updated_at')
+    list_filter = ('organization', 'created_at', 'updated_at')
     search_fields = ('name', 'description')
-    ordering = ('start_date',)
+    ordering = ('created_at',)
     inlines = [GoalInline]
 
 
