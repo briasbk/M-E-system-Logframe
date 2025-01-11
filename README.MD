@@ -1,15 +1,27 @@
 # Open-Source Monitoring and Evaluation (M&E) System
 
-Welcome to the Open-Source Monitoring and Evaluation (M&E) System! This project is designed to provide organizations with a comprehensive and customizable platform to manage and evaluate projects effectively. With features tailored to support logframes, project tracking, and user management, this system aims to streamline monitoring and evaluation processes for improved decision-making.
+Welcome to the Open-Source Monitoring and Evaluation (M&E) System! This project provides organizations with a powerful and customizable platform to manage and evaluate projects effectively. With features designed for logframes, activity tracking, user roles, and reporting, this system streamlines monitoring and evaluation processes, enabling better decision-making and accountability.
 
 ## Key Features
 
-- **Project Management**: Create and manage multiple projects with detailed information and progress tracking.
-- **Logframe Support**: Design and manage logical frameworks (logframes) to plan and assess project objectives.
-- **Activity Tracking**: Track activities, milestones, and outputs for each project.
-- **User Management**: Manage roles and permissions for team members and stakeholders.
-- **Report Generation**: Generate comprehensive reports for project evaluation and accountability.
-- **Open-Source Flexibility**: Customize and extend the platform to fit your organization's unique needs.
+- **Project Management**  
+  Create and manage multiple projects, complete with objectives, progress tracking, and detailed information.
+
+- **Logframe Support**  
+  Design and implement logical frameworks (logframes) to plan, monitor, and assess project objectives.
+
+- **Activity Tracking**  
+  Track activities, milestones, outputs, and progress for each project in real-time.
+
+- **User Management**  
+  Manage roles, permissions, and access for team members and stakeholders.
+
+- **Report Generation**  
+  Generate comprehensive reports for monitoring, evaluation, and accountability.
+
+- **Open-Source Flexibility**  
+  Customize and extend the platform to fit your organization's unique needs and requirements.
+
 
 ## Technology Stack
 
