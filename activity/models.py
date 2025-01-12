@@ -2,7 +2,7 @@ from django.db import models
 from projects.models import Output
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
-from django.contrib.auth.models import User
+from users.models import CustomUser
 
 class Activity(models.Model):
     output = models.ForeignKey(Output, on_delete=models.CASCADE, related_name="activities")
@@ -15,7 +15,7 @@ class Activity(models.Model):
     current_progress_description = models.TextField()
 
     # Responsibilities - You can use User model or create a custom user model
-    responsible_person = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    responsible_person = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, null=True, blank=True)
 
     # Plan
     plan_start_date = models.DateField(null=True, blank=True)
@@ -43,7 +43,7 @@ class Task(models.Model):
     start_date = models.DateField()
     end_date = models.DateField()
     status = models.CharField(max_length=50)  # E.g., 'Pending', 'In Progress', 'Completed'
-    responsible_person = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
+    responsible_person = models.ForeignKey(CustomUser, on_delete=models.SET_NULL, null=True, blank=True)
     progress = models.IntegerField(default=0)
     description = models.TextField()
 

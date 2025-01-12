@@ -10,8 +10,8 @@ class ActivityAdmin(admin.ModelAdmin):
 
 @admin.register(Indicator)
 class IndicatorAdmin(admin.ModelAdmin):
-    list_display = ('id', 'activity', 'name', 'target_value', 'achieved_value', 'means_of_verification')
-    list_filter = ('activity',)
+    list_display = ('id', 'indicator_type', 'name', 'target_value', 'achieved_value', 'means_of_verification')
+    list_filter = ('indicator_type',)
     search_fields = ('name', 'means_of_verification')
     ordering = ('name',)
 
